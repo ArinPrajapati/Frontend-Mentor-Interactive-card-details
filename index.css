@@ -153,3 +153,35 @@ section {
   align-items: center;
   justify-content: flex-end;
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    flex-direction: column;
+  }
+
+  section {
+    width: 100%;
+    height: 50%;
+    margin-bottom: 4rem;
+  }
+
+  .card {
+    width: 17rem;
+    height: 10.3rem;
+  }
+  .sec-card {
+    margin-top: 1rem;
+    align-items: center;
+  }
+
+  #card1 #card-show {
+    font-size: 1.06rem;
+
+    margin-bottom: 0.5rem;
+    margin-right: 2rem;
+  }
+
+  .sec-form form {
+    margin-left: 3rem;
+  }
+}
