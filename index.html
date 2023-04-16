@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./index.css">
+  <script src="https://kit.fontawesome.com/9f455fbf8a.js" crossorigin="anonymous"></script>
+  <script defer src="./index.js"></script>
+
+  <title>Frontend Mentor | Interactive card details form</title>
+
+
+</head>
+
+<body>
+  <section class="sec-card">
+    <div id="card1" class="card">
+
+      <div id="ic"><i class="fa-solid fa-circle" style="color: #ffffff;"></i>
+        <i class="fa-regular fa-circle"></i>
+      </div>
+
+      <p id="card-show">0000 0000 0000 0000</p>
+
+      <div id="cn-info">
+        <p id="card-name">Card Holder</p>
+        <p id="card-exp"><span id="monthexp">MM</span>/ <span id="yearexp">YY</span></p>
+      </div>
+
+
+
+
+    </div>
+    <div id="card2" class="card">
+      <p id="cvv-view">000</p>
+    </div>
+
+  </section>
+  <section class="sec-form">
+    <form action="">
+      <label for="cardName">
+        CardHolder Name
+      </label>
+      <input type="text" id="cardName" name="fname" placeholder="e.g.Jane Appleseed" required>
+      <label for="cardNumber">
+        Card Number
+      </label>
+      <input type="text" id="cardNumber" maxlength="16" name="cardNumber" placeholder="1234 5678 9012 3456" required>
+      <label for="month">
+        Expiration Date
+      </label>
+      <div id="date">
+        <input type="text" id="month" name="date" placeholder="MM" maxlength="2" required>
+        <input type="text" id="year" name="date" placeholder="YY" maxlength="4" required>
+      </div>
+
+      <label for="cvv">
+        CVV
+      </label>
+      <input type="text" maxlength="3" id="cvv" name="cvv" placeholder="e.g. 123" required>
+
+      <input type="submit" id="Confrim" value="Confrim">
+
+
+    </form>
+
+
+  </section>
+
+
+
+
+
+
+</body>
+
+</html>
